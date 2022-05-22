@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+            href="./css/bootstrap.css"
+            rel="stylesheet"
+            crossorigin="anonymous">
+    <title>Track</title>
+    <style>
+        a, a:hover  {
+            text-decoration: none;
+            color: white;
+        }
+        .header {
+            background-color: #1a1e21;
+            color: white;
+        }
+
+        #video {
+            position: relative;
+            width: fit-content;
+        }
+
+        #play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #content-part{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .first-row {
+            border-bottom: 1px solid rgba(203, 203, 185, 0.55);
+        }
+
+        .line-height {
+            line-height: 3em;
+        }
+
+        .lvl-passed {
+            color: rgba(28, 122, 29, 0.61);
+        }
+
+        .lvl-not-reached {
+            color: rgba(119, 118, 122, 0.61);
+        }
+        .lvl-button{
+            line-height: 100%;
+            margin-left: 20px;
+        }
+        #note{
+            display: block;
+            height: 200px;
+            width: 500px;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+<div class="header p-3 row">
+    <h1 class="col">My Ollie</h1>
+    <ul class="nav col justify-content-end align-items-center">
+        <li class="nav-item">
+            <a class="nav-link text-light" href="allTricks.html">All Tricks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="./myTricks.html">My tricks</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="row py-5 first-row">
+        <div id="content-part" class="col">
+            <div>
+                <h4>Description...</h4>
+                <p>Any skateboarder will tell you that the ollie is the most fundamental skateboard trick. In fact, it's
+                    probably the first trick that you'll learn on your skateboard. They’re great for getting over obstacles,
+                    moving around on your board, or just looking cool. Know the right way to move your feet on the board and
+                    with a little bit of practice, you can learn to pull off the perfect ollie!</p>
+            </div>
+            <div>
+                <span class="badge bg-dark">Prerequisite: </span><i style="color: rgba(43, 29, 32, 0.53)">Get comfortable on board, kick turns, tic-tacks</i>
+            </div>
+        </div>
+        <div class="col">
+            <a href="video.html">
+                <div id="video">
+                    <img src="images/ollie-2.jpg" width="500px">
+                    <img id="play" src="images/play2.png" width="200px">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="py-5 line-height mb-3">
+        <ul class="list-unstyled">
+            <li class="lvl-passed"><span class="badge bg-success">Lvl 1:</span><b> Get board off the ground(filming
+                yourself may help)</b></li>
+            <li class="lvl-passed"><span class="badge bg-success">Lvl 2:</span><b> Get board 1cm off the ground</b></li>
+            <li><span class="badge bg-dark">Lvl 3:</span><b> Level out board</b>
+                <button class="btn-sm btn-success lvl-button"><a href="lvl-up-ollie.html">Mark as done</a></button>
+            </li>
+            <li class="lvl-not-reached"><span class="badge bg-secondary">Lvl 4:</span><b> Jump over a line on the
+                ground</b></li>
+            <li class="lvl-not-reached"><span class="badge bg-secondary">Lvl 5:</span><b> Jump over a branch</b></li>
+            <li>. . .</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form>
+                <input id="note" type="text">
+                <button type="submit" class="btn btn-dark">Save note</button>
+            </form>
+        </div>
+        <div class="col">
+            <button class="btn btn-secondary">Show previous notes</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

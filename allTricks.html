@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+            href="./css/bootstrap.css"
+            rel="stylesheet"
+            crossorigin="anonymous">
+    <title>All tricks</title>
+    <style>
+        .container > .row {
+            padding: 3em 0 3em 0;
+            border-bottom: 1px solid rgba(203, 203, 185, 0.55);
+        }
+
+        .trick-header h3{
+            padding-top: 7px;
+        }
+
+        .trick-header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .can-learn-icon{
+            display: flex;
+        }
+
+        .can-learn-icon h5{
+            padding-top: 15px;
+            padding-left: 5px;
+        }
+
+        .last-tracked {
+            color: rgba(43, 29, 32, 0.53)
+        }
+
+        .my-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .header {
+            background-color: #1a1e21;
+            color: white;
+        }
+        a,
+        a:hover{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="header p-3 row">
+    <h1 class="col">All Tricks</h1>
+    <ul class="nav col justify-content-end align-items-center">
+        <li class="nav-item">
+            <a class="nav-link text-light" href="#">All Tricks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="./myTricks.html">My tricks</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="images/kickflip.jpg" width="500px">
+        </div>
+        <div class="col my-flex">
+            <div>
+                <div class="trick-header">
+                    <div>
+                        <h3>Kickflip</h3>
+                        Prerequisites: <span class="badge bg-success">Ollie lvl3</span>
+                    </div>
+                    <div class="can-learn-icon">
+                        <img width="50px" height="50px" src="images/check-icon.png">
+                        <h5>Ready to learn</h5>
+                    </div>
+                </div>
+            </div>
+            <p>
+                A kickflip is a common skateboard trick that pops the skater up into the air, using their feet to flip
+                the board a full rotation—360 degrees. With a kickflip, the board spins mid-air toward the skater. This
+                skateboarding trick is performed on flat ground as well as on obstacles, like over steps or off-ramps
+            </p>
+            <div class="row">
+                <button class="col btn-dark"><a href="kickflip-my-tricks.html">Start Learning</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="images/pop-shuvit.jpg" width="500px">
+        </div>
+        <div class="col my-flex">
+            <div>
+                <div class="trick-header">
+                    <div>
+                        <h3>Pop Shuvit</h3>
+                        Prerequisites:
+                        <span class="badge bg-secondary">Shuvit lvl10</span>
+                        <span class="badge bg-success">Ollie lvl3</span>
+                    </div>
+                    <div class="can-learn-icon">
+                        <img width="50px" height="50px" src="images/x-icon.webp">
+                        <h5>Not ready to learn</h5>
+                    </div>
+                </div>
+            </div>
+            <p>
+                The Pop Shuvit is a very important fundamental trick. With the Pop Shove-It the board turns backside
+                for 180 degrees but the body remains in the same position. This trick is a good entry to flips thus it’s
+                not too complicated to perform. But even if you get the drift easy, this trick will be of good value if
+                you progress way further. So don’t miss to add this trick to your menu!
+            </p>
+            <div class="row">
+                <button class="col btn-dark">Start Learning</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="images/50-50-grind.jpg" width="500px">
+        </div>
+        <div class="col my-flex">
+            <div>
+                <div class="trick-header">
+                    <div>
+                        <h3>50/50 grind</h3>
+                        Prerequisites:
+                        <span class="badge bg-secondary">Kickflip lvl5</span>
+                    </div>
+                    <div class="can-learn-icon">
+                        <img width="50px" height="50px" src="images/x-icon.webp">
+                        <h5>Not ready to learn</h5>
+                    </div>
+                </div>
+            </div>
+            <p>
+                A 50/50 grind is a skateboarding trick where the skateboarder ollies their board onto an
+                obstacle (like a handrail or bench), grinding forward on the middle part of the deck before landing
+                their board on the ground again. The “50/50” part refers to how the board hangs half-on and half-off the
+                chosen obstacle.
+            </p>
+            <div class="row">
+                <button class="col btn-dark">Start Learning</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
